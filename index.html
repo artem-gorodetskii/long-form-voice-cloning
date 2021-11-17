@@ -2,4 +2,85 @@
   <head>
     <meta charset="UTF-8">
     <title>Audio samples from "Zero-Shot Long-Form Voice Cloning with Dynamic Convolution Attention Mechanism"</title>
-  </html>
+    
+<script>
+      function play(path) {{
+        var player = document.getElementById('player');
+        player.src = path;
+        player.play();
+      }}
+    </script>
+
+    
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<style>
+.audio-cell {
+  /* Center audio widgets in the table cell. */
+  text-align: center;
+  padding-bottom: 1px;
+  padding-top: 1px;
+}
+.audio-cell-padded { 
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.audio-header {
+  /* Don't wrap header text. */
+  white-space: nowrap;
+  /* Some breaking space between headers for readability. */   
+  padding-right: 5px; 
+  padding-left: 5px; 
+}
+.reference-cell {
+  /* For uniformity and to wrap long reference text, limit the reference cell's width. */
+  width: 25%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.sample audio {
+  vertical-align: middle;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.round-button {
+	box-sizing: border-box;
+	display:block;
+	width:30px;
+	height:30px;
+	padding-top: 8px;
+	padding-left: 3px;
+	line-height: 6px;
+	border: 1.2px solid #000;
+	border-radius: 50%;
+	color: #000;
+	text-align:center;
+	background-color: rgba(0,0,0,0.00);
+	font-size:6px;
+  box-shadow: 0px 0px 2px rgba(0,0,0,1);
+	transition: all 0.2s ease;
+}
+.round-button:hover {
+	background-color: rgba(0,0,0,0.0);
+	box-shadow: 0px 0px 4px rgba(0,0,0,1);
+}
+.round-button:active {
+	background-color: rgba(0,0,0,0.01);
+	box-shadow: 0px 0px 1px rgba(0,0,0,1);
+}
+</style>
+
+  </head>
+  <body>
+    <audio controls="" id="player"></audio>
+    <article>
+      <header>
+        <h1>Audio samples from "Location-Relative Attention Mechanisms For Robust Long-Form Speech Synthesis"</h1>
+      </header>
+    </article>
+    <div><p><b>Paper:</b> <a href="https://arxiv.org/abs/1910.10288">arXiv</a></p></div>
+    <div><p><b>Authors:</b> Eric Battenberg, RJ Skerry-Ryan, Soroosh Mariooryad, Daisy Stanton, David Kao, Matt Shannon, and Tom Bagby</p></div>
+    <div><p><b>Abstract:</b> Despite the ability to produce human-level speech for in-domain text, attention-based end-to-end text-to-speech (TTS) systems suffer from text alignment failures that increase in frequency for out-of-domain text. We show that these failures can be addressed using simple location-relative attention mechanisms that do away with content-based query/key comparisons. We compare two families of attention mechanisms: location-relative GMM-based mechanisms and additive energy-based mechanisms. We suggest simple modifications to GMM-based attention that allow it to align quickly and consistently during training, and introduce a new location-relative attention mechanism to the additive energy-based family, called Dynamic Convolution Attention (DCA). We compare the various mechanisms in terms of alignment speed and consistency during training, naturalness, and ability to generalize to long utterances, and conclude that GMM attention and DCA can generalize to very long utterances, while preserving naturalness for shorter, in-domain utterances.</p></div>
+    <p>This page contains a set of audio samples in support of the paper: it is suggested that the reader listen to the samples in conjunction with reading the paper. 
+    <b>All utterances were unseen during training.</b></p>
