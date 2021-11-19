@@ -84,14 +84,14 @@
 
     <div><p><b>Authors:</b> Artem Gorodetskii, Ivan Ozhiganov</p></div>
     <div><p><b>Abstract:</b> Recent advances in voice cloning allows to bring performance of speech synthesis for a target speaker closer to human level. However, such text-to-speech models still suffer from text alignment failures resulting in an inability to synthesize long sentences. In this work, we propose a variant of multi-speaker text-to-speech system capable to reproduce a target voice from a few seconds of reference speech and to generalize to very long utterances as well. The proposed system is based on three independently trained components known as speaker encoder, synthesizer and universal vocoder. Generalization to long utterances is provided through the use of a recently developed energy-based attention mechanism, called Dynamic Convolution Attention, in combination with a set of modifications proposed for the based on Tacotron 2 synthesizer. At the same time, effective zero-shot speaker adaptation is achieved by conditioning of both synthesizer and vocoder on speaker encoder, which has been pretrained on the large corpus of diverse data. We compare several implementations of voice cloning system in terms of speech naturalness, similarity, alignment consistency and ability to synthesize long utterances, and can conclude that the proposed model is able to produce intelligible synthetic speech for very long utterances preserving high extent of naturalness and similarity for short texts.</p></div>
-    <p>This page contains a set of audio samples in support of the paper. 
-    <b>All speakers and texts were unseen during training.</b></p>
+    <p>This page contains a set of audio samples in support of the paper.</p> 
+    <p><b>All speakers and texts were unseen during training.</b></p>
 	  
     <p class="toc_title"><h3>Contents</h3></p>
     <div id="toc_container">
     <ul>
       <li><a href="#In-domain texts"> 1. In-domain texts
-<li><a href="#Generalization-to-long-utterances"> 2. Generalization to long utterances
+      <li><a href="#Generalization-to-long-utterances"> 2. Generalization to long utterances
     </ul>
     </div>
    <a name="In-domain texts"><h3>1. In-domain texts</h3></a>
@@ -112,7 +112,7 @@ The following utterances are generated using ground truth utterances and texts f
           </td>
         </tr>
 	    
-	      <tr>
+	<tr>
           <td class="reference-cell">
             Text:</br><span class="text_e2e">"Yes, very unhappy, and very much to be pitied, Monsieur de Guiche, for you seem to be suffering terribly."</span>
           </td>
