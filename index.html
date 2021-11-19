@@ -17,7 +17,10 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"/>
 <style>
 .audio_container {
- vertical-align: middle;
+ max-width:200px;
+ position:absolute;
+ top:0;
+ right:0;
 }
 .audio-cell {
   /* Center audio widgets in the table cell. */
@@ -79,9 +82,11 @@
   </head>
 	  
   <body>
-    <div id="audio_container">
-      <audio controls="" id="player" align="center"></audio>
+	  
+    <div class="audio_container">
+      <audio controls="" id="player"></audio>
     </div>
+	  
     <article>
       <header>
         <h1>Audio samples from "Zero-Shot Long-Form Voice Cloning with Dynamic Convolution Attention Mechanism"</h1>
