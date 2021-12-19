@@ -95,9 +95,9 @@
     </article>
 
     <div><p><b>Authors:</b> Artem Gorodetskii, Ivan Ozhiganov</p></div>
-    <div><p><b>Abstract:</b> Recent advances in voice cloning bring the performance of speech synthesis for a target speaker closer to human level. However, such text-to-speech models still suffer from text alignment failures resulting in an inability to synthesize long sentences. In this work, we propose a variant of multi-speaker text-to-speech system capable of reproducing a target voice from a few seconds of reference speech and generalizing to very long utterances as well. The proposed system is based on three independently trained components known as speaker encoder, synthesizer and universal vocoder. Generalization to long utterances is provided through the use of a recently developed energy-based attention mechanism, called Dynamic Convolution Attention, in combination with a set of modifications proposed for the synthesizer based on Tacotron 2. At the same time, effective zero-shot speaker adaptation is achieved by conditioning both synthesizer and vocoder on a speaker encoder, which has been pretrained on the large corpus of diverse data. We compare several implementations of voice cloning systems in terms of speech naturalness, similarity, alignment consistency and ability to synthesize long utterances, and conclude that the proposed model is able to produce intelligible synthetic speech for very long utterances preserving high extent of naturalness and similarity for short texts.</p></div>
+    <div><p><b>Abstract:</b> Recent advances in voice cloning bring the performance of speech synthesis for a target speaker closer to human level. However, such text-to-speech models still suffer from text alignment failures resulting in an inability to synthesize long sentences. In this work, we propose a variant of multi-speaker text-to-speech system capable of reproducing a target voice from a few seconds of reference speech and generalizing to very long utterances as well. The proposed system is based on three independently trained components known as speaker encoder, synthesizer and universal vocoder. Generalization to long utterances is provided through the use of a recently developed energy-based attention mechanism, called Dynamic Convolution Attention, in combination with a set of modifications proposed for the synthesizer based on Tacotron 2. At the same time, effective zero-shot speaker adaptation is achieved by conditioning both synthesizer and vocoder on a speaker encoder, which has been pretrained on the large corpus of diverse data. We compare several implementations of voice cloning systems in terms of speech naturalness, speaker similarity, alignment consistency and ability to synthesize long utterances, and conclude that the proposed model is able to produce intelligible synthetic speech for very long utterances preserving high extent of naturalness and similarity for short texts.</p></div>
     <p>This page contains a set of audio samples in support of the paper.</p> 
-    <p><b>All speakers and texts were unseen during training.</b></p>
+    <p><b>All speakers and texts were unseen during training. All utterances were synthesized in a zero-shot manner.</b></p>
     
     <p class="toc_title"><h3>Contents</h3></p>
     <div id="toc_container">
@@ -108,7 +108,7 @@
     </div>
    <a name="in-domain-utterances"><h3>1. In-domain utterances</h3></a>
 <p>
-The following utterances are generated using the ground truth utterances and texts form the test-clean subset of the LibriTTS dataset.    
+The following utterances are generated using ground truth utterances and texts form the test-clean subset of the LibriTTS dataset.    
 </p><table>
         <tr>
           <td class="reference-cell">
@@ -353,12 +353,12 @@ Utterances with attention failures are marked in <span style="color: red">red</s
         <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0051_0150/0051.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
         <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0051_0150/0052.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
         <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0051_0150/0053.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
-        <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0051_0150/0054.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
+        <td class="audio-cell"><div class="round-button" style="display: inline-block; color: red;" onclick="play('./audio/out_domain_utterances_0051_0150/0054.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
         <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0051_0150/0055.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
         <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0051_0150/0056.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
         <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0051_0150/0057.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
         <td class="audio-cell"><div class="round-button" style="display: inline-block; color: red;" onclick="play('./audio/out_domain_utterances_0051_0150/0058.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
-        <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0051_0150/0059.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
+        <td class="audio-cell"><div class="round-button" style="display: inline-block; color: red;" onclick="play('./audio/out_domain_utterances_0051_0150/0059.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
         <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0051_0150/0060.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
       </tr>
 
@@ -381,11 +381,11 @@ Utterances with attention failures are marked in <span style="color: red">red</s
             <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0051_0150/0073.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
             <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0051_0150/0074.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
             <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0051_0150/0075.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
-            <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0051_0150/0076.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
+            <td class="audio-cell"><div class="round-button" style="display: inline-block; color: red;" onclick="play('./audio/out_domain_utterances_0051_0150/0076.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
             <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0051_0150/0077.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
             <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0051_0150/0078.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
             <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0051_0150/0079.mp3')"><i class="fa fa-play fa-2x"></i></div></td>            
-            <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0051_0150/0080.mp3')"><i class="fa fa-play fa-2x"></i></div></td>                       
+            <td class="audio-cell"><div class="round-button" style="display: inline-block; color: red;" onclick="play('./audio/out_domain_utterances_0051_0150/0080.mp3')"><i class="fa fa-play fa-2x"></i></div></td>                       
           </tr>
 
           <tr><th class="audio-header">Proposed model</th>
@@ -442,7 +442,7 @@ Utterances with attention failures are marked in <span style="color: red">red</s
 
       <tr><th class="audio-header">Baseline-LSA-40</th>
         <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0051_0150/0091.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
-        <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0051_0150/0092.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
+        <td class="audio-cell"><div class="round-button" style="display: inline-block; color: red;" onclick="play('./audio/out_domain_utterances_0051_0150/0092.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
         <td class="audio-cell"><div class="round-button" style="display: inline-block; color: red;" onclick="play('./audio/out_domain_utterances_0051_0150/0093.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
         <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0051_0150/0094.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
         <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0051_0150/0095.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
@@ -455,7 +455,7 @@ Utterances with attention failures are marked in <span style="color: red">red</s
 
         <tr><th class="audio-header">Baseline-LSA-80</th>
           <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0051_0150/0101.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
-          <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0051_0150/0102.mp3')"><i class="fa fa-play fa-2x"></i></div></td>        
+          <td class="audio-cell"><div class="round-button" style="display: inline-block; color: red;" onclick="play('./audio/out_domain_utterances_0051_0150/0102.mp3')"><i class="fa fa-play fa-2x"></i></div></td>        
           <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0051_0150/0103.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
           <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0051_0150/0104.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
           <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0051_0150/0105.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
@@ -474,7 +474,7 @@ Utterances with attention failures are marked in <span style="color: red">red</s
             <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0051_0150/0115.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
             <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0051_0150/0116.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
             <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0051_0150/0117.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
-            <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0051_0150/0118.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
+            <td class="audio-cell"><div class="round-button" style="display: inline-block; color: red;" onclick="play('./audio/out_domain_utterances_0051_0150/0118.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
             <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0051_0150/0119.mp3')"><i class="fa fa-play fa-2x"></i></div></td>            
             <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0051_0150/0120.mp3')"><i class="fa fa-play fa-2x"></i></div></td>                       
           </tr>
@@ -535,9 +535,9 @@ Utterances with attention failures are marked in <span style="color: red">red</s
         <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0051_0150/0131.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
         <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0051_0150/0132.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
         <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0051_0150/0133.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
-        <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0051_0150/0134.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
+        <td class="audio-cell"><div class="round-button" style="display: inline-block; color: red;" onclick="play('./audio/out_domain_utterances_0051_0150/0134.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
         <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0051_0150/0135.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
-        <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0051_0150/0136.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
+        <td class="audio-cell"><div class="round-button" style="display: inline-block; color: red;" onclick="play('./audio/out_domain_utterances_0051_0150/0136.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
         <td class="audio-cell"><div class="round-button" style="display: inline-block; color: red;" onclick="play('./audio/out_domain_utterances_0051_0150/0137.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
         <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0051_0150/0138.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
         <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0051_0150/0139.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
@@ -561,11 +561,11 @@ Utterances with attention failures are marked in <span style="color: red">red</s
             <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0151_0250/0151.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
             <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0151_0250/0152.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
             <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0151_0250/0153.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
-            <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0151_0250/0154.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
+            <td class="audio-cell"><div class="round-button" style="display: inline-block; color: red;" onclick="play('./audio/out_domain_utterances_0151_0250/0154.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
             <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0151_0250/0155.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
             <td class="audio-cell"><div class="round-button" style="display: inline-block;  color: red;" onclick="play('./audio/out_domain_utterances_0151_0250/0156.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
             <td class="audio-cell"><div class="round-button" style="display: inline-block;  color: red;" onclick="play('./audio/out_domain_utterances_0151_0250/0157.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
-            <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0151_0250/0158.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
+            <td class="audio-cell"><div class="round-button" style="display: inline-block; color: red;" onclick="play('./audio/out_domain_utterances_0151_0250/0158.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
             <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0151_0250/0159.mp3')"><i class="fa fa-play fa-2x"></i></div></td>            
             <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0151_0250/0160.mp3')"><i class="fa fa-play fa-2x"></i></div></td>                       
           </tr>
@@ -632,7 +632,7 @@ Utterances with attention failures are marked in <span style="color: red">red</s
         <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0151_0250/0177.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
         <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0151_0250/0178.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
         <td class="audio-cell"><div class="round-button" style="display: inline-block; color: red;" onclick="play('./audio/out_domain_utterances_0151_0250/0179.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
-        <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0151_0250/0180.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
+        <td class="audio-cell"><div class="round-button" style="display: inline-block; color: red;" onclick="play('./audio/out_domain_utterances_0151_0250/0180.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
       </tr>
 
         <tr><th class="audio-header">Baseline-LSA-80</th>
@@ -652,7 +652,7 @@ Utterances with attention failures are marked in <span style="color: red">red</s
             <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0151_0250/0191.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
             <td class="audio-cell"><div class="round-button" style="display: inline-block;  color: red;" onclick="play('./audio/out_domain_utterances_0151_0250/0192.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
             <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0151_0250/0193.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
-            <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0151_0250/0194.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
+            <td class="audio-cell"><div class="round-button" style="display: inline-block; color: red;" onclick="play('./audio/out_domain_utterances_0151_0250/0194.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
             <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0151_0250/0195.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
             <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0151_0250/0196.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
             <td class="audio-cell"><div class="round-button" style="display: inline-block;" onclick="play('./audio/out_domain_utterances_0151_0250/0197.mp3')"><i class="fa fa-play fa-2x"></i></div></td>
